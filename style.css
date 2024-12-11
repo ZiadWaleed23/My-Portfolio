@@ -8,8 +8,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #A3B18A;
-  border: #344E41 solid 10px;
+  background: linear-gradient(40deg,#1D3557 ,#085686 ,#f52536 );
+  border: #000000 solid 10px;
 }
 
 html {
@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: #344E41;
+  color: #266cc7;
   text-decoration: underline;
   text-underline-offset: 1rem;
 
@@ -100,7 +100,8 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background: linear-gradient(40deg,#1D3557 ,#085686 ,#f52536 );
+  border-radius: 10px;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -180,7 +181,7 @@ section {
 }
 
 .section__pic-container img{
-  border: solid #588157 5px;
+  border: solid #000000 5px;
   border-radius: 10%;
   width: 97%;
   height: 98%;
@@ -189,6 +190,11 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  /* background-color: #DAD7CD;
+  border: #dad7cd solid ;
+  border-radius: 20px;
+  height: 160px;
+  padding: 3%; */
 }
 
 .section__text p {
@@ -259,7 +265,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #DAD7CD;
+  background: #c99e14;
   border-radius: 2rem;
   border: 0.1rem solid;
   border-color:#588157;
@@ -328,11 +334,11 @@ article .icon {
 
 .color-container {
   border-color: #588157;
-  background: #DAD7CD;
+  background: #c99e14;
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   width: 90%;
   height: 90%;
 }
@@ -356,8 +362,8 @@ article .icon {
   justify-content: center;
   border-radius: 2rem;
   border: #588157 0.1rem solid;
-  border-color: #DAD7CD;
-  background: #DAD7CD;
+  border-color: #000000;
+  background: #c99e14;
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -382,6 +388,29 @@ article .icon {
   height: 2.5rem;
 }
 
+/* Scroll to Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background-color: #0b7fc7;
+  color: #000000;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+  font-size: 23px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensures it's above other content */
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #085686;
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -391,4 +420,17 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f52536, #085686);
 }
